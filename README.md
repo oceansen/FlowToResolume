@@ -15,6 +15,10 @@ $ npm install <p>
 <p>
 Using: <p>
 $ cd osc-web <p>
+
+Replace the bridge.js file in osc-web with the one in the repository. The bridge.js file in the repository essentially
+processes a regular expression to parse the OSC message and send values to Resolume.
+
 $ node bridge.js <p>
 
 This starts osc-web and must run in the background.<p>
