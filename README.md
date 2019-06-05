@@ -19,4 +19,6 @@ $ node bridge.js <p>
 
 This starts osc-web and must run in the background.<p>
 
+Step 1: Open index.html in the Chrome Browser and connect to sensors (two sensors in this example)
+
 
