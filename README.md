@@ -54,5 +54,5 @@ One can also receiving data from more than two sensors based on the code below.
     // Add more statements like this for the six sesnors
 
     //Send data to two different OSC addresses in Resolume
-    ** socket.emit('message', "/composition/tempocontroller/tempo" + sensor1Value.toString()); **
-    ** socket.emit('message', "/composition/master" + sensor2Value.toString());**
+     socket.emit('message', "/composition/tempocontroller/tempo" + sensor1Value.toString()); 
+     socket.emit('message', "/composition/master" + sensor2Value.toString());
