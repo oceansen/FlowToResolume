@@ -32,3 +32,27 @@ Step 2: Observe data in osc bridge
 Step 3: Observe changes in Resolume (see BPM for example)
 
 ![Observe changes in Resolume](https://github.com/sensimula/FlowToResolume/blob/master/resolumeReceivingData.png)
+
+
+Step 4: You can change the address of OSC messages in Resolume by editing socket.emit statements in sketchBluetooth.js
+One can also receiving data from more than two sensors based on the code below.
+
+//Assign arriving sensor data to respective device
+    devices[id.toString()] = iput;
+    if(devices[Object.keys(devices)[0]]!=undefined)
+    {
+      sensor1Value = devices[Object.keys(devices)[0]];
+     
+      console.log(sensor1Value);
+    }
+    if(devices[Object.keys(devices)[1]]!=undefined)
+    {
+      sensor2Value  = devices[Object.keys(devices)[1]];
+      
+      console.log(sensor2Value);
+    }
+    // Add more statements like this for the six sesnors
+
+    //Send data to two different OSC addresses in Resolume
+    ** socket.emit('message', "/composition/tempocontroller/tempo" + sensor1Value.toString()); **
+    ** socket.emit('message', "/composition/master" + sensor2Value.toString());**
