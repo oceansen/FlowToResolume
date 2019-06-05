@@ -29,6 +29,6 @@ Step 2: Observe data in osc bridge
 
 ![Receiving OSC messages](https://github.com/sensimula/FlowToResolume/blob/master/receivingOSC.png)
 
-Step 3: Observe changes in Resolume
+Step 3: Observe changes in Resolume (see BPM for example)
 
 ![Observe changes in Resolume](https://github.com/sensimula/FlowToResolume/blob/master/resolumeReceivingData.png)
